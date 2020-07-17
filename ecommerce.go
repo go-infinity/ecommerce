@@ -4,22 +4,23 @@ import (
 	"fmt"
 
 	"github.com/go-infinity/ecommerce/product"
-	"github.com/go-infinity/ecommerce/user"
 )
 
 func main() {
 	// var declare and intialize later
-	var user user.User
+	// var user user.User
 	// var declare in initzile in same statement
-	product := product.Product{ProductName: "TV", ProductCategory: "Electronics", ProductPrice: 10000}
+	product := product.Product{ProductName: "TV", ProductCategory: "Electronics", ProductPrice: 10000, ProductStock: 10}
 
-	user.FirstName = "vikash"
-	user.LastName = "Kumar"
-	user.Role = "GUEST"
-	user.EmailID = "vikas.kumar@gmail.com"
-	user.DeliveryAddress = "PATNA"
-	user.HomeAddress = "PATNA"
+	// user := user.User{FirstName: "Sandeep",
+	// 	LastName:        "Kumar",
+	// 	DeliveryAddress: user.Address{City: "ModiNagar", State: user.UP, Country: user.INDIA},
+	// 	IsActive:        true,
+	// 	LastLoginTime:   time.Now()}
 
-	fmt.Printf("User is %v\n", user)
+	// fmt.Printf("User is %v\n", user)
+	fmt.Printf("product is %v\n", product)
+	success := product.BuyProduct("VCR")
+	fmt.Printf("operation is %v\n", success)
 	fmt.Printf("product is %v\n", product)
 }
