@@ -1,10 +1,21 @@
 package user
 
+import "time"
+
 //CONSTANT
+const (
+	INDIA string = "India"
+	UP    string = "Uttar Pradesh"
+)
+
 //ENUM
 //CUSTOM TYPE
 //VALIDATION
-type Address string
+type Address struct {
+	City    string
+	State   string
+	Country string
+}
 
 type User struct {
 	FirstName       string
@@ -15,4 +26,6 @@ type User struct {
 	Phone           int
 	HomeAddress     Address
 	DeliveryAddress Address
+	IsActive        bool
+	LastLoginTime   time.Time
 }
