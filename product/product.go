@@ -1,5 +1,9 @@
 package product
 
+import (
+	"time"
+)
+
 //CONSTANT
 //ENUM
 //CUSTOM TYPE
@@ -10,7 +14,8 @@ type Product struct {
 	ProductName     string
 	ProductCategory string // ELECTRONICS,BEAUTY,GARMENT
 	ProductPrice    float32
-	ProductStock    int
+	ProductStock    int64
+	LastAdded       time.Time
 }
 
 // BuyProduct will update product stock
