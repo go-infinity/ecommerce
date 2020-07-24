@@ -1,0 +1,38 @@
+struct
+A struct is a user-defined type that contains a collection of named fields/properties. 
+It is used to group related data together to form a single unit. 
+Any real world entity that has a set of properties can be represented using a struct.
+
+
+let take an example how to decleared struct
+
+type Employee struct {  
+    firstName string
+    lastName  string
+    age       int
+}
+--------------------------------------------------------------
+Data Type In Golang
+
+Data type in go language can specify the type of data that a valid Go variabe can hold, as in go language
+basic data type are:
+(1).  Numbers
+(2).  Booleans
+(3). String
+-----------------------------------------------
+custom data type
+custom type struct means user can defined the data type 
+
+package main
+
+import "fmt"
+
+func main() {
+   apps := []string{"samsung", "nokia", "iphone"}
+
+   for i, app := range apps {
+    fmt.Println(i, app)
+   }
+}
+
+
