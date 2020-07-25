@@ -21,6 +21,9 @@
 - Abstract Type
     - Interfaces
 
+## builtin function 
+ - len
+
 ## Method Receiver
 - Value Reciever
 - Pointer Receiver
@@ -30,6 +33,10 @@
 - IF..ELSE IF..ELSE
 - SWITCH CASE
 
+## Data Structures/Algorithms
+- Array - Fixed length collection of a single type of elements - O based index
+- Slice - Variable length collection of a single type of elements
+- Map - Collection of Key pair value
 
 ## Packages
 - fmt
