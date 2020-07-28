@@ -4,17 +4,11 @@ import (
 	"time"
 )
 
-//CONSTANT
-//ENUM
-//CUSTOM TYPE
-//VALIDATION
-
-//Product is a type for Business products
 type Product struct {
 	ProductName     string
-	ProductCategory string // ELECTRONICS,BEAUTY,GARMENT
+	ProductCategory string
 	ProductPrice    float32
-	ProductStock    int64
+	ProductStock    int32
 	LastAdded       time.Time
 }
 

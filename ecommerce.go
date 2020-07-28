@@ -5,36 +5,22 @@ import (
 	"time"
 
 	"github.com/go-infinity/ecommerce/order"
+	"github.com/go-infinity/ecommerce/product"
 )
 
-//func main() {
-// var declare and intialize later
-// var user user.User
-// var declare in initzile in same statement
-//product := product.Product{ProductName: "TV",
-//	ProductCategory: "Electronics",
-//	ProductPrice:    10000,
-//	ProductStock:    10, LastAdded:time.Now().Add}
-// user := user.User{FirstName: "Sandeep",
-// 	LastName:        "Kumar",
-// 	DeliveryAddress: user.Address{City: "ModiNagar", State: user.UP, Country: user.INDIA},
-// 	IsActive:        true,
-// 	LastLoginTime:   time.Now()}
-
-// fmt.Printf("User is %v\n", user)
-//fmt.Printf("product is %v\n", product)
-//fmt.Printf("Last Added Time IS:", time.Now().Add(-24*time.Hour))
-//success := product.BuyProduct("VCR")
-//fmt.Printf("operation is %v\n", success)
-//fmt.Printf("product is %v\n", product)
 func main() {
+	product := product.Product{ProductName: "TV", ProductPrice: 764, ProductCategory: "Electronic", ProductStock: 5}
+	fmt.Printf("product is %v\n", product)
+	success := product.BuyProduct("TV")
+	fmt.Printf("operation is %v\n", success)
+	fmt.Printf("product is %v\n", product)
 	order := order.Order{OrderNumber: 1234,
-		OrderBy:              "Azazul",
-		OrderDate:            time.Time.Now(),
-		OrderDeliveryAddress: order.Address{HouseNo: 12, StreeNo: 3, AreaVillage: "Bhualpur", City: "Chapra", State: "Bihar", Landmark: "Azad Chowk", PinCode: 841415},
-		OrderDelivered:       true}
+		OrderBy:         "Azazul",
+		OrderDate:       time.Now(),
+		DeliveryAddress: order.Address{HouseNo: 12, StreetNo: 3, AreaVillage: "Bhualpur", City: "Chapra", State: "Bihar", Landmark: "Azad Chowk", PinCode: 841415},
+		OrderDelivered:  true}
 
-	fmt.Println("Order Delivery Details%v\n", order)
+	fmt.Printf("Order Delivery Details%v", order)
 	//fmt.Println("Your order no is:%v\n", OrderNumber)
 	//fmt.Println("Order By:%v\n", OrderBy)
 	//fmt.Println("Order Date:%vn", OrderDate)

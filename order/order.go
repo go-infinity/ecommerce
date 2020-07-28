@@ -9,7 +9,7 @@ type Address struct {
 	City        string
 	State       string
 	Landmark    string
-	PinCode     int64
+	PinCode     int32
 }
 type Order struct {
 	OrderNumber     int64
