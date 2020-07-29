@@ -22,5 +22,6 @@ func (p *Product) BuyProduct(prodName string) bool {
 		p.ProductStock = p.ProductStock - 1
 		return true
 	}
+
 	return false
 }
