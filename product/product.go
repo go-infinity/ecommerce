@@ -8,7 +8,7 @@ type Product struct {
 	ProductName     string
 	ProductCategory string
 	ProductPrice    float32
-	ProductStock    int32
+	ProductStock    int16
 	LastAdded       time.Time
 }
 
