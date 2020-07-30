@@ -17,8 +17,7 @@ func main() {
 	order := order.Order{OrderNumber: 1234,
 		OrderBy:         "Azazul",
 		OrderDate:       time.Now(),
-		DeliveryAddress: order.Address{HouseNo: 12, StreetNo: 3, AreaVillage: "Bhualpur", City: "Chapra", State: "Bihar", Landmark: "Azad Chowk", PinCode: 841415},
-		OrderDelivered:  true}
+		DeliveryAddress: order.Address{HouseNo: 12, StreetNo: 3, AreaVillage: "Bhualpur", City: "Chapra", State: "Bihar", Landmark: "Azad Chowk", PinCode: 841415}}
 
 	fmt.Printf("Order Delivery Details%v", order)
 	//fmt.Println("Your order no is:%v\n", OrderNumber)
