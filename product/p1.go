@@ -7,7 +7,7 @@ import "time"
 //CUSTOM TYPE
 //VALIDATION
 
-//Product is a type for Business products
+//Product is a type for Business products ABC
 type Product struct {
 	ProductName     string
 	ProductCategory ProductCategory // ELECTRONICS,BEAUTY,GARMENT
